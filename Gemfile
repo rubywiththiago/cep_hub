@@ -17,10 +17,11 @@ group :development, :test do
   gem 'dotenv-rails', '~> 3.1'
   gem 'factory_bot_rails', '~> 6.4'
   gem 'rspec-rails', '~> 6.1'
-  gem 'rubocop',      '~> 1.63', require: false
+  gem 'rubocop', '~> 1.63', require: false
 end
 
 group :test do
+  gem 'sqlite3', '~> 1.7'
   gem 'vcr',          '~> 6.2'
   gem 'webmock',      '~> 3.23'
 end

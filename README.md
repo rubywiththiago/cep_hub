@@ -1,24 +1,16 @@
-# README
+# CEP Hub 📨
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API única que normaliza provedores de CEP.
 
-Things you may want to cover:
+Stack (sem banco):
+* Rails 7 API-only (sem ActiveRecord)
+* Redis (cache + Sidekiq)
+* Clean Architecture (UseCases / Domain / Infra)
 
-* Ruby version
 
-* System dependencies
+### 7. Teste rápido
 
-* Configuration
+```bash
+docker compose up --build -d
+curl http://localhost:3000/health   # => {"ok":true}
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
